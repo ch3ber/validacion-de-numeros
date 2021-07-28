@@ -10,6 +10,7 @@ function verificacion() {
       numeros.push(display.value[i]); 
    }
 
+   // validar el numero
    if (! Number.isInteger(parseFloat(contenidoDisplay))) {
       mostrarMensaje('El numero no es entero');
       return;
@@ -22,9 +23,11 @@ function verificacion() {
       mostrarMensaje('El numero tinene numeros repetidos');
       return;
    }
+
    mostrarMensaje('El numero cumple con todas las reglas', 'valido');
 }
 
+// encontrar numeros repetidos en el array
 function numerosRepetidos(valor, indice, lista) {
    return !(lista.indexOf(valor) == indice);
 }
