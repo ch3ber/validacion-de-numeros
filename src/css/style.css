@@ -1,0 +1,93 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+   font-size: 1.6rem;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: skyblue;
+   color: #fff;
+   padding: 5rem;
+   background: linear-gradient(to right, #5f2c82, #49a09d);
+}
+
+@media (min-width: 768px) {
+   body {
+      text-align: left;
+      font-size: 2.4rem;
+      display: grid;
+      place-items: center center;
+      height: 100vh;
+   }
+}
+
+main {
+   background: rgba( 255, 255, 255, 0.20 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 11.0px );
+   -webkit-backdrop-filter: blur( 11.0px );
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+   border-radius: 3rem;
+}
+@media (min-width: 768px) {
+   main {
+      display: flex;
+      justify-content: space-evenly;
+   }
+}
+.instrucciones {
+   padding: 5rem;
+   color: #ffffff;
+}
+.contenido {
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 0 0 3rem 3rem;
+   padding: 5rem;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+@media (min-width: 768px) {
+   .contenido {
+      border-radius: 0 3rem 3rem 0;
+   }
+}
+.input-numbers {
+   border: none;
+   border-radius: 1rem;
+   background-color: #fff;
+   padding: 1rem;
+}
+.button {
+   cursor: pointer;
+   margin-top: 3rem;
+   border: 3px solid #444;
+   padding: 1rem;
+   background: transparent;
+   border-radius: 1rem;
+   color: #444;
+}
+.button:hover {
+   color: #fff;
+   border: 3px solid #fff;
+}
+.error {
+   border-radius: 1rem;
+   padding: 1rem;
+   background-color: red;
+   text-align: center;
+}
+.valido {
+   text-align: center;
+   border-radius: 1rem;
+   padding: 1rem;
+   background-color: green;
+}
