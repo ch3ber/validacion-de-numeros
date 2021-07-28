@@ -12,12 +12,13 @@ body {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    background-color: skyblue;
    color: #fff;
-   padding: 5rem;
+   padding: 3rem;
    background: linear-gradient(to right, #5f2c82, #49a09d);
 }
 
 @media (min-width: 768px) {
    body {
+      padding: 5rem;
       text-align: left;
       font-size: 2.4rem;
       display: grid;
@@ -35,15 +36,18 @@ main {
 
    border-radius: 3rem;
 }
+.instrucciones {
+   padding: 3rem;
+   color: #ffffff;
+}
 @media (min-width: 768px) {
    main {
       display: flex;
       justify-content: space-evenly;
    }
-}
-.instrucciones {
-   padding: 5rem;
-   color: #ffffff;
+   .instrucciones {
+      padding: 5rem;
+   }
 }
 .contenido {
    background-color: rgba(255, 255, 255, 0.2);
