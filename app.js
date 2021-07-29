@@ -19,7 +19,7 @@ function verificacion() {
       mostrarMensaje('El numero es menor a 6 digitos o no es un numero');
       return;
    }
-   if (numeros.some(numerosRepetidos)) {
+   if (tieneNumerosRepetidos(numeros)) {
       mostrarMensaje('El numero tinene numeros repetidos');
       return;
    }
@@ -28,8 +28,8 @@ function verificacion() {
 }
 
 // encontrar numeros repetidos en el array
-function numerosRepetidos(valor, indice, lista) {
-   return !(lista.indexOf(valor) == indice);
+function tieneNumerosRepetidos(array) {
+   return array.length !== new Set(array).size;
 }
 
 function mostrarMensaje(mensaje, tipo = null) {
