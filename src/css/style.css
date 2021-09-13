@@ -1,0 +1,58 @@
+*, *:before, *:after { box-sizing: inherit; }
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+.border-padding {
+   border: none;
+   border-radius: 1rem;
+   padding: 1rem;
+}
+body {
+   margin: 0;
+   font-size: 1.6rem;
+   text-align: center;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #fff;
+   padding: 3rem;
+   background: linear-gradient(to right, #5f2c82, #49a09d);
+}
+@media (min-width: 768px) {
+   body {
+      display: grid;
+      place-items: center center;
+      height: 100vh;
+   }
+}
+main {
+   background: rgba( 255, 255, 255, 0.20 );
+   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 11.0px );
+   -webkit-backdrop-filter: blur( 11.0px );
+   border: 1px solid rgba( 255, 255, 255, 0.18 );
+   border-radius: 3rem;
+   max-width: 90%;
+}
+@media (min-width: 768px) {
+   main {
+      display: flex;
+      justify-content: space-evenly;
+   }
+}
+.contenido {
+   background-color: rgba(255, 255, 255, 0.2);
+   border-radius: 0 0 3rem 3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+@media (min-width: 768px) { .contenido { border-radius: 0 3rem 3rem 0; } }
+.button {
+   cursor: pointer;
+   margin-top: 3rem;
+   border: 3px solid #444;
+   background: transparent;
+   color: #444
+}
+.error { background-color: red; }
+.valido { background-color: green; }
